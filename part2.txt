@@ -3,6 +3,7 @@ Fill in the passphrases here.
 <!-- Passcode for question 1: greenEggsAndHam -->
 <title data-question2="iHateCplusplus">Scavenger Hunt</title>
 Passcode for question 3: HTMLRocks
+<question-four style="display:none">Passcode: JavaScriptRules</question-four>
 Question 5 Passcode: SvelteBeatsReact
 Question 6 Passcode: ThisIsJS
 Question 7 Passcode: YouFoundMe
