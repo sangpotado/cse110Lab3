@@ -1,0 +1,136 @@
+/* Reset some default browser styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style header */
+header {
+    background-color: #333;
+    /* color: #fff; */
+    color: rgb(175,255,100);
+    padding: 20px;
+    text-align: center;
+}
+
+h2 ~ h3 {     /* for date, lab task*/
+    color: rgb(239, 243, 19);
+}
+/* Style navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #49b5d0;
+    text-decoration: none;
+}
+
+/* Style sections */
+section {
+    padding: 20px;
+}
+section:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+section:has(img, video, audio) {
+    text-align: center;
+}
+
+section h2 {
+    margin-top: 0;
+    color:#7a2c8f;
+    text-align: left;
+}
+
+/* Style form */
+form {
+    /* margin-top: 20px; */
+    margin: auto;
+}
+
+fieldset {
+    border-color: #123;
+    border-style: dashed;
+}
+
+fieldset legend{
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* Style footer */
+footer {
+    background-color: #333;
+    color: #ce4040;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Grid layout */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.name {
+    text-shadow: 4px 4px 3px #77f;
+}
+
