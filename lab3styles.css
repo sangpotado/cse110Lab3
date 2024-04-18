@@ -8,15 +8,15 @@ html, body {
 /* Style header */
 header {
     background-color: #333;
-    color: #fff;
+    /* color: #fff; */
+    color: rgb(175,255,100);
     padding: 20px;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
+h2 ~ h3 {     /* for date, lab task*/
+    color: rgb(239, 243, 19);
 }
-
 /* Style navigation */
 nav ul {
     list-style-type: none;
@@ -37,21 +37,32 @@ nav ul li a {
 section {
     padding: 20px;
 }
+section:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+section:has(img, video, audio) {
+    text-align: center;
+}
 
 section h2 {
     margin-top: 0;
+    color:#7a2c8f;
+    text-align: left;
 }
 
 /* Style form */
 form {
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin: auto;
 }
 
 fieldset {
-    border: none;
+    border-color: #123;
+    border-style: dashed;
 }
 
-legend {
+fieldset legend{
     font-weight: bold;
 }
 
@@ -93,6 +104,7 @@ button:hover {
     background-color: #555;
 }
 
+
 /* Style footer */
 footer {
     background-color: #333;
@@ -103,3 +115,22 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* Grid layout */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.name {
+    text-shadow: 4px 4px 3px #77f;
+}
+
